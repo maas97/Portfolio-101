@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #dbe4ee;
+}
+
+.nav {
+  z-index: 1;
+  background-color: #81a4cd;
+  width: 100%;
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li,
+.nav ul .partnav {
+  display: inline-block;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav .name {
+  position: absolute;
+  top: 5px;
+  padding: 5px;
+  margin-top: 15px;
+  font-size: 1.8vw;
+}
+a:hover {
+  color: #054a91;
+  font-size: 1.7vw;
+}
+.nav .partnav {
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  padding: 5px;
+  right: 50px;
+  margin-top: 10px;
+}
+.resume,
+.projects,
+.contact {
+  padding: 4px;
+  font-size: 1.6vw;
+}
+
+/* Header */
+
+.header {
+  position: relative;
+  margin: 120px auto 30px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #3e7cb1;
+  height: 420px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.intro {
+  /* border: black 3px solid; */
+  position: relative;
+  top: 70px;
+  left: 70px;
+  right: 120px;
+  width: 500px;
+}
+
+h1,
+.intro span,
+h2,
+.interests span {
+  padding: 5px;
+  color: #dbe4ee;
+}
+
+h1,
+h2 {
+  font-family: "Patrick Hand", cursive;
+  font-size: 4vw;
+}
+
+.intro span,
+.interests span {
+  font-size: 1.6vw;
+}
+
+.interests {
+  margin-top: 7px;
+  /* float: left; */
+}
+
+.image {
+  background-image: url(../Images/personal.jpg);
+  background-size: contain;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: relative;
+  top: 25px;
+  left: 35px;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (max-width: 1150px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 600px;
+  }
+
+  h1,
+  h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 2.8vw;
+  }
+
+  .intro span,
+  .interests span {
+    font-size: 1.5vw;
+  }
+
+  .image {
+    width: 270px;
+    height: 270px;
+    top: 0px;
+    left: -5px;
+    margin: auto;
+  }
+
+  .intro {
+    float: none;
+    min-width: 250px;
+    height: 150px;
+    position: relative;
+    top: -45px;
+    left: 0px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav .name {
+    margin-top: 17px;
+    font-size: 3vw;
+  }
+  a:hover {
+    color: #054a91;
+    font-size: 2.8vw;
+  }
+  .nav .partnav {
+    right: 20px;
+    margin-top: 15px;
+  }
+  .resume,
+  .projects,
+  .contact {
+    padding: 4px;
+    font-size: 2.7vw;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px;
+  }
+
+  .intro {
+    font-size: 13px;
+    min-width: 250px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+    top: 80px;
+    right: 150px;
+    margin: auto;
+  }
+
+  h1,
+  h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 3vw;
+  }
+
+  .intro span,
+  .interests span {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .image {
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    width: 130px;
+    height: 130px;
+    top: 170px;
+  }
+  .intro {
+    position: absolute;
+    top: 370px;
+    left: -100px;
+    font-size: 11px;
+    margin: auto 0;
+  }
+}
+
+/* Content */
+
+.content {
+  width: 100%;
+  background-color: #dbe4ee;
+  position: relative;
+  margin: 30px auto 30px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #3e7cb1;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.technology1,
+.technology2,
+.technology3,
+.technology4,
+.technology5 {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  border-radius: 50%;
+  margin: 80px auto;
+}
+
+.technology1:hover,
+.technology2:hover,
+.technology3:hover,
+.technology4:hover,
+.technology5:hover {
+  width: 160px;
+  height: 160px;
+  opacity: 0.5;
+}
+
+.technology1 {
+  background-image: url(../Images/java.jpg);
+}
+
+.technology2 {
+  background-image: url(../Images/javascript.png);
+}
+
+.technology3 {
+  background-image: url(../Images/sql.png);
+}
+
+.technology4 {
+  background-image: url(../Images/linux.jpg);
+}
+
+.technology5 {
+  background-image: url(../Images/c.png);
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  text-align: center;
+}
+
+.footer span {
+  display: inline-block;
+  margin-top: 30px;
+  color: #81a4cd;
+}
